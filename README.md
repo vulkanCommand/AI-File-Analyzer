@@ -1,7 +1,6 @@
 # 📄 AI-Powered File Analyzer (PDF Only)
 
-🚀 \*\*cgitd \*\*\
-The project is built using **Amazon Bedrock, AWS Lambda, API Gateway, S3, and JavaScript**.
+🚀 The project is built using **Amazon Bedrock, AWS Lambda, API Gateway, S3, and JavaScript**.
 
 ---
 
