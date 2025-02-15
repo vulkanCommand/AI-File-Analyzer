@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI File Analyzer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI File Analyzer</h1>
+        <p>Upload any file and get an AI-generated summary.</p>
+        
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept="*">
+            <button id="uploadBtn">Upload & Analyze</button>
+        </div>
+        
+        <div id="result" class="hidden result-box">
+            <h2>Analysis Result</h2>
+            <p id="fileType"></p>
+            <p id="summary"></p>
+        </div>        
+    </div>
+    
+    <script src="assets/js/api-config.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/effects.js"></script>
+</body>
+</html>
