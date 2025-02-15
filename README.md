@@ -83,9 +83,9 @@ This structure ensures that **frontend** and **backend** components are clearly 
 8️⃣ Test the function using a sample event\
 
 Lambda Function Code:
-
+```bash
 {lambda_function.py}
-
+```
 ## ✅ **Configure AWS Lambda (Backend)**
 
 1️⃣ **Create a new Lambda function** in AWS Console\
@@ -108,9 +108,9 @@ To expose the Lambda function as a REST API, follow these steps:
 8️⃣ Update your frontend (api-config.js) with the new API URL\
 
 API Config Code:
-
+```bash
 {api-config.js}
-
+```
 ✅ Now, your Lambda function is successfully connected to API Gateway
 
 
