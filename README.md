@@ -71,6 +71,20 @@ This structure ensures that **frontend** and **backend** components are clearly 
 4️⃣ **Set permissions** so Lambda can call Amazon Bedrock
 
 ---
+✅ Creating AWS Lambda
+
+1️⃣ Go to AWS Lambda Console
+2️⃣ Click Create Function → Choose Author from scratch
+3️⃣ Enter a function name (e.g., ai-file-analyzer-lambda)
+4️⃣ Select Python 3.x as the runtime
+5️⃣ Choose an execution role and attach AmazonBedrockFullAccess policy
+6️⃣ Upload the Lambda function (``)
+7️⃣ Click Deploy
+8️⃣ Test the function using a sample event
+
+Lambda Function Code:
+
+{lambda_function.py}
 
 ## ✅ **Configure AWS Lambda (Backend)**
 
@@ -80,13 +94,25 @@ This structure ensures that **frontend** and **backend** components are clearly 
 4️⃣ Upload the **Lambda function (********`lambda_function.py`********)**\
 5️⃣ Ensure the function returns **AI-generated summaries**
 
-### Lambda Function Code:
+✅ Creating and Configuring API Gateway
 
-```python
-{lambda_function.py}
-```
+To expose the Lambda function as a REST API, follow these steps:
 
----
+1️⃣ Go to AWS API Gateway Console
+2️⃣ Click Create API → Select HTTP API
+3️⃣ Click Add Integration → Select Lambda Function
+4️⃣ Choose your Lambda function (e.g., ai-file-analyzer-lambda)
+5️⃣ Click Next and configure the /analyze endpoint
+6️⃣ Enable CORS to allow requests from your frontend
+7️⃣ Click Deploy API and copy the Invoke URL
+8️⃣ Update your frontend (api-config.js) with the new API URL
+
+API Config Code:
+
+{api-config.js}
+
+✅ Now, your Lambda function is successfully connected to API Gateway
+
 
 ## ✅ **Installed Packages & Dependencies**
 
