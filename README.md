@@ -246,7 +246,7 @@ aws s3 sync ./frontend s3://your-s3-bucket-name --acl public-read
 
 ## 📜 **License**
 
-This project is **MIT Licensed**. You are free to use and modify it.
+You are free to use and modify it.
 
 ---
 
