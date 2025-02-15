@@ -1,6 +1,7 @@
 # 📄 AI-Powered File Analyzer (PDF Only)
 
-🚀 The project is built using **Amazon Bedrock, AWS Lambda, API Gateway, S3, and JavaScript**.
+🚀 AI-Powered File Analyzer is a web application that allows users to upload PDF files and receive AI-generated summaries. 
+The project is built using **Amazon Bedrock, AWS Lambda, API Gateway, S3, and JavaScript**.
 
 ---
 
